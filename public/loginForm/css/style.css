@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  height: 100%;
+}
+
+.logo img {
+  max-height: 350px;
+}
+
+.input-group-text {
+  width: 100px;
+}
+
+.btn-outline-custom {
+  border-radius: 30px;
+  border-color: #61c358 !important;
+  background: #61c358;
+  color: #f8fafb;
+}
+.btn-outline-custom:hover {
+  background: #80c358;
+  color: #f8fafb;
+}
+.btn-outline-custom:active {
+  border-color: #61c358;
+  background: #61c358 !important;
+  color: #f8fafb !important;
+}/*# sourceMappingURL=style.css.map */
