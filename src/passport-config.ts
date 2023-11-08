@@ -1,6 +1,6 @@
 import passport, { use } from 'passport';
 import LocalStrategy from 'passport-local';
-import User from './db';
+import User from './database/db';
 
 const cacheData : Map<Number, User>= new Map()
 

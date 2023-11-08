@@ -26,19 +26,16 @@ body {
   align-items: center;
 }
 .container .login {
-  width: 100%;
+  width: 95%;
 }
 
 .logo {
-  padding-top: 3vh;
+  padding-top: 10vh;
   width: 100%;
 }
 .logo img {
-  width: 170px;
-}
-
-.invalid-feedback {
-  text-align: right;
+  height: 250px;
+  width: 250px;
 }
 
 .input-group-text {
@@ -68,12 +65,4 @@ body {
   .input-group-lg .input-group-text {
     font-size: 15px;
   }
-}
-.was-validated .form-control:valid {
-  background-image: none;
-}
-
-:active, :hover, :focus {
-  outline: 0 !important;
-  outline-offset: 0 !important;
 }/*# sourceMappingURL=style.css.map */

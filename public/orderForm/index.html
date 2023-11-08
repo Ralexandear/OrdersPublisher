@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="orderForm/css/reset.css" type="text/css">
+  <link rel="shortcut icon" href="/general/icon/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="orderForm/css/style.css" type="text/css">
+  <title>OrdersForm</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="d-flex justify-content-between align-items-center mb-5">
+      <img src="orderForm/icon/notificatorLogo.svg" alt="OleandriaApps"  id="notificatorLogo">
+      <nav class="navbar bg-body-tertiary m-0">
+        <div class="container d-flex" id="nav__container">
+          <div class="nav container nav-pills" id="nav-tab" role="tablist">
+            <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">🧪 Лабомат</button>
+            <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">🦠 Антиген</button>
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">👩‍🔬 Cito</button>
+            <button class="nav-link active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">🛴 Самокат</button>
+          </div>  
+        </div>
+      </nav>
+      <button type="button" class="btn btn-outline-success">Success</button>
+    </header>
+  
+    <div class="block">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+          <div class="d-flex flex-row justify-content-around">
+            <!-- justify-content-center -->
+            <div class="container order_form">
+              <datalist id="clientNameList">
+              </datalist>
+          
+              <div class="item form-floating mb-3">
+                <input class="form-control" list="clientNameList" id="clientNameInput" placeholder="">
+                <label for="clientNameInput">Название клиента</label>
+              </div>
+          
+              <div class="item form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="addressInput" style="resize: none;"></textarea>
+                <label for="addressInput">Адрес</label>
+              </div>
+              <div class="item d-flex">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Заказано</span>
+                  <input type="text" class="form-control" placeholder="" pattern="\d{1,2},\d">
+                </div>
+              </div>
+              <div class="item d-flex">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">В лабу</span>
+                  <input type="text" class="form-control" placeholder="" pattern="\d{1,2},\d">
+                </div>
+              </div>
+              
+            
+              <div class="item d-flex">
+                <h3 style="margin-right: 15px;">Курьер</h3>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="width: auto;">К</span>
+                  <input type="text" class="form-control" placeholder="" pattern="\d{1,2},\d">
+                </div>
+              </div>
+            </div>
+            <div class="messageForm">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="messageForm" style="resize: none;"></textarea>
+                <label for="floatingTextarea2">Текст сообщения</label>
+                <button class="btn btn-custom" type="button">Отправить <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                </svg></button>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show active text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="1">
+          <div class="messageForm mx-auto" style="width: 70%;min-width: 300px;">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" style="resize: none; min-height: 300px;width: 100%;"></textarea>
+              <label for="floatingTextarea2">Текст сообщения</label>
+              <button class="btn btn-custom" type="button">Кнопка</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", ()=>{
+    const buttons = document.querySelectorAll('.nav-link');
+
+    buttons.forEach(e => {
+      e.addEventListener("click", () => console.log('test'))
+    })
+  })
+
+
+</script>
+</html>

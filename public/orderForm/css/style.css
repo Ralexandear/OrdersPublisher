@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  padding: 4vw 4vw;
+  background: #f8fafb;
+}
+
+#notificatorLogo {
+  height: 100px;
+  width: 152px;
+}
+
+#nav-tab button {
+  margin-right: 1vw;
+}
+#nav-tab button:nth-last-child {
+  margin: 0;
+}
+
+#nav__container .button {
+  border-radius: 2px;
+}
+
+.nav-link.active {
+  background-color: #61c358 !important;
+}
+
+.input-group-text {
+  width: 100px;
+}
+
+.order_form {
+  margin: 0;
+  width: 30%;
+  min-width: 220px;
+}
+
+#navbarContainter {
+  padding: 0 auto;
+}
+
+.block {
+  margin: 0 100px;
+}
+
+#addressInput {
+  height: 110px;
+}
+
+.messageForm {
+  margin: 0;
+  width: 60%;
+  min-width: 220px;
+}
+.messageForm .form-floating {
+  height: 80%;
+}
+.messageForm .form-floating .form-control {
+  margin-bottom: 19px;
+  height: 100%;
+}
+.messageForm .form-floating button {
+  border: 0;
+  color: #f8fafb;
+  background: #61c358;
+  border-radius: 20px;
+  width: 100%;
+}
+.messageForm .form-floating button:active {
+  background: #4f9f48;
+  color: white;
+}
+
+#address {
+  height: 150px;
+}/*# sourceMappingURL=style.css.map */
